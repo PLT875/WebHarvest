@@ -33,6 +33,9 @@ class WebScraperTest extends PHPUnit_Framework_TestCase {
         </body>
       </html>";
   
+  /**
+   * Test that all titles are returned in from $testPageSource.
+   */
   public function testRetrieveNodeValuesFromDom() {
     $domDocument = new DomDocument();
     @$domDocument->loadHTML($this->testPageSource);
@@ -43,6 +46,9 @@ class WebScraperTest extends PHPUnit_Framework_TestCase {
     $this->assertEquals($nodeValues[2], "Tomato");  
   }
   
+  /**
+   * Test that all unit prices are returned in decimal format from $testPageSource.
+   */
   public function testRetrieveNodeValuesFromDomWithClean() {
     $domDocument = new DomDocument();
     @$domDocument->loadHTML($this->testPageSource);

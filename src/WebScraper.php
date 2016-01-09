@@ -55,6 +55,8 @@ class WebScraper {
   }
   
   /**
+   * N.B. Not used.
+   * 
    * Function to retrieve the DOM element of a page for a given element ID.
    * 
    * @param String $pageSource
