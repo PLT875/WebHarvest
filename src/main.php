@@ -42,7 +42,7 @@ foreach ($productLinks as $link) {
 }
 
 // The product data attributes are all present on the main URL. So the productTitle 
-// key can be used across the other arrays to build a complete product profile.
+// key can be used across the other arrays to build a complete product record.
 $results = array();
 foreach ($productTitles as $key => $value) {
   $product = array('title' => $productTitles[$key],

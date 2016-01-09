@@ -38,6 +38,7 @@ class WebScraper {
    * - The preg_replace pattern, to remove unwanted characters from the fetched nodeValue.
    * 
    * @return Array $nodeValues
+   * - String $nodeValue
    */
   public static function retrieveNodeValuesFromDom($domDocument, $queryXPath, $pattern = NULL) {
     $nodeValues = array();
