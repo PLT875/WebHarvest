@@ -1,11 +1,9 @@
 # Web Harvest
 
-A command line application for scraping product data of a given URL.
-Summary of results are printed out in formatted JSON.
+* A command line application for scraping product data of a given URL.
+* Summary of results are printed out in formatted JSON.
 
-# Install
-
-__Instructions
+# Installation Instructions
 * Download a ZIP copy of the master branch and extract into a directory of your choice.
 
 # Run
