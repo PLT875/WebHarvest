@@ -34,7 +34,7 @@ class WebScraperTest extends PHPUnit_Framework_TestCase {
       </html>";
   
   /**
-   * Test that all titles are returned in from $testPageSource.
+   * Test that all titles are returned from $testPageSource.
    */
   public function testRetrieveNodeValuesFromDom() {
     $domDocument = new DomDocument();
@@ -60,7 +60,7 @@ class WebScraperTest extends PHPUnit_Framework_TestCase {
   }
   
   /**
-   * Test that DOMElement is returned when searching for ID 'productLister in $testPageSource.
+   * Test that DOMElement is returned when searching for ID 'productLister' in $testPageSource.
    */
   public function testRetrieveElementByIdFind() {
     $testFind = WebScraper::retrieveElementById($this->testPageSource, 'productInfo');
@@ -69,7 +69,7 @@ class WebScraperTest extends PHPUnit_Framework_TestCase {
   }
   
   /**
-   * Test that NULL is returned when searching for ID 'product in $testPageSource.
+   * Test that NULL is returned when searching for ID 'product' in $testPageSource.
    */
   public function testRetrieveElementByIdNoFind() {
     $testNoFind = WebScraper::retrieveElementByID($this->testPageSource, 'product');
